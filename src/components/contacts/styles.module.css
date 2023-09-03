@@ -1,0 +1,48 @@
+.contacts {
+    padding: 10rem 0 3rem 2.5rem;
+    color: #fff;
+    width: 70%;
+}
+
+.contacts h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.icons {
+    margin-left: 35%;
+    display: flex;
+    gap: 20px
+}
+
+@media (max-width: 920px) {
+    .contacts {
+        padding: 0 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .contacts h2 {
+        text-align: center;
+    }
+
+    .icons {
+        margin: 0
+    }
+}
+
+@media (max-width: 450px) {
+    .contacts {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .contacts h2 {
+        font-size: 2rem
+    }
+}

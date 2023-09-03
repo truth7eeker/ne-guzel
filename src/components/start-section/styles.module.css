@@ -1,0 +1,140 @@
+.start {
+    position: relative;
+    height: 90vh;
+}
+
+
+/* header */
+
+.header {
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #fff
+}
+
+.logo {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: grab
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    list-style: none;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    background-color: #2ec4b6;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.nav li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* profile */
+
+.profile {
+    display: flex;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.text h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.text span {
+    color: #2ec4b6
+}
+
+.text p {
+    color: #bcb8b1
+}
+
+.img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    -webkit-box-shadow: 5px 5px 10px 0px #2ec4b6,
+        -5px -5px 10px 0px #2ec4b6;
+    -moz-box-shadow: 5px 5px 10px 0px #2ec4b6,
+        -5px -5px 10px 0px #2ec4b6;
+    box-shadow: 5px 5px 10px 0px #2ec4b6, -5px -5px 10px 0px #2ec4b6;
+}
+
+.burger {
+    cursor: pointer;
+    z-index: 10;
+    transition: .3s;
+}
+
+
+
+@media (max-width: 640px) {
+
+    .profile {
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .header {
+        padding: 1.5rem;
+    }
+
+    .nav {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        right: 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        background-color: #0f243a;
+        align-items: center;
+        width: 300px;
+        justify-content: start;
+        padding-top: 3rem;
+
+    }
+
+
+}
+
+@media (max-width: 410px) {
+    .nav {
+        width: 100%;
+    }
+    .nav ul {
+        width: inherit;
+    }
+}

@@ -1,0 +1,187 @@
+.questionnaire {
+    margin-top: 7rem;
+    color: #fff;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    padding: 7rem 2rem 0 0;
+}
+.text h2 {
+    
+   text-align: left;
+}
+span {
+    color: #2ec4b6;
+}
+
+.title {
+    display: flex;
+}
+
+.questionnaire img {
+    position: absolute;
+    top: 0;
+    left:-500px;
+}
+
+.text ul {
+    list-style: none;
+    letter-spacing: 1px;
+    color: #bcb8b1;
+    line-height: 1.5rem;
+    text-align: left;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.text ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.text ul li:nth-child(1) {
+    padding-top: 1rem;
+}
+
+.cert a {
+    text-decoration: none;
+    color: #2ec4b6;
+}
+
+
+@media (max-width: 1200px) {
+    .questionnaire img {
+        left: -550px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .questionnaire img {
+        left: -625px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .questionnaire img {
+        left: -680px;
+    }
+}
+
+@media (max-width: 990px) {
+    .questionnaire img {
+        left: -630px;
+    }
+    .text {
+        padding-right: .2rem;
+        max-width: 515px;
+    }
+}
+
+@media (max-width: 950px) {
+    .questionnaire img {
+        left: -700px;
+    }
+
+   
+}
+
+@media (max-width: 870px) {
+    .questionnaire img {
+        left: -760px;
+    }
+
+    .text {
+        max-width: 515px;
+    }
+}
+
+@media (max-width: 800px) {
+    .questionnaire img {
+            left: -810px;
+        }
+
+}
+
+
+@media (max-width: 760px) {
+    .text {
+        max-width: 490px;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .text {
+        max-width: 455px;
+    }
+
+}
+
+@media (max-width: 712px) {
+    .text {
+        max-width: 420px;
+    }
+
+}
+
+@media (max-width: 680px) {
+    .questionnaire img {
+            left: -830px;
+        }
+
+}
+
+@media (max-width: 660px) {
+    .questionnaire img {
+        left: -850px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .questionnaire {
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .questionnaire img {
+        width: 100%;
+        object-fit: cover;
+        position: unset;
+    }
+
+    .text {
+        padding: 0 1.5rem;
+    }
+    .text ul {
+        text-align: center;
+    }
+
+    .text ul li {
+        text-align: left;
+    }
+    .title {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 340px) {
+   .title {
+    font-size: .9rem;
+   }
+
+}
+
+@media (max-width: 310px) {
+    .title {
+        font-size: .8rem;
+    }
+
+}

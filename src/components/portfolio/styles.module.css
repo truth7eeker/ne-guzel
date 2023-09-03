@@ -1,0 +1,88 @@
+.portfolio {
+    padding: 500px 0 3rem 2.5rem;
+    color: #d1d0cf;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio a button {
+    background-color: transparent;
+    padding: 15px 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid #2ec4b6;
+    cursor: pointer;
+    color: white
+}
+
+
+.portfolio a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: end;
+}
+
+.grid img {
+    width: 300px;
+    height: 200px;
+    cursor: pointer;
+}
+
+@media (max-width: 920px) {
+    .portfolio {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 2.5rem;
+        margin-top: 50%;
+        margin-bottom: 20%;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .grid {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 670px) {
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        width: auto;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .portfolio {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio {
+        margin-top: 30%;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+    .grid img {
+        width: 100%;
+        object-fit: cover
+    }
+}
